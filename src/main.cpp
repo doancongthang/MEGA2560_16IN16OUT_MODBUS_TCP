@@ -75,7 +75,7 @@ void inOutInit()
   for (int i = 0; i < 16; i++)
   {
     pinMode(coils[i], OUTPUT);
-    pinMode(input[i], INPUT);
+    pinMode(input[i], INPUT_PULLUP);
   }
 }
 void pollingInOut()
